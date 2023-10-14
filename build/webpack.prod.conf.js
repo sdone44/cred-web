@@ -11,7 +11,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-// var ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin')
+var ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin')
 
 const env = config.build.env
 
@@ -59,15 +59,15 @@ const webpackConfig = merge(baseWebpackConfig, {
         new webpack.DefinePlugin({
             'process.env': env
         }),
-        new UglifyJsPlugin({
-            uglifyOptions: {
-                compress: {
-                    warnings: false
-                }
-            },
-            sourceMap: config.build.productionSourceMap,
-            parallel: true,
-        }),
+        // new UglifyJsPlugin({
+        //     uglifyOptions: {
+        //         compress: {
+        //             warnings: false
+        //         }
+        //     },
+        //     sourceMap: config.build.productionSourceMap,
+        //     parallel: true,
+        // }),
         // new ParallelUglifyPlugin({
         //     cacheDir: '.cache/',
         //     uglifyJS:{

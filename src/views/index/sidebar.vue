@@ -16,13 +16,13 @@
 <template>
   <div style="height: 100%;position: relative;box-sizing: border-box">
     <div style="height: 100%;background-color: #0c1220;box-sizing: border-box;overflow-y: auto;" class="sidebar-content">
-      <div class="image-flex justify-center center" style="height: 54px;position:relative;" v-if="menuShowC">
+      <!-- <div class="image-flex justify-center center" style="height: 54px;position:relative;" v-if="menuShowC">
         <img :src="maxLog" alt="" style="width:120px">
         <span class="sidebar-contract-icon">
           <i class="el-icon-caret-left font-color-aeb1b5" @click="hideMune(true)" style="font-size: 18px;"></i>
         </span>
         <span v-if="version" class="font-12 text-center version">({{version}})</span>
-      </div>
+      </div> -->
 
       <span class="sidebar-contract-icon">
         <i class="el-icon-caret-left font-color-aeb1b5" @click="hideMune(true)" style="font-size: 18px;"></i>
@@ -591,7 +591,6 @@ export default {
 
 <style scoped>
 .el-menu-vertical-demo {
-  padding-top: 31px;
   border: none;
 }
 .el-menu-vertical-demo >>> .el-menu-item {

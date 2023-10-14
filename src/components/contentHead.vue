@@ -34,12 +34,11 @@
             <span class="content-head-version" v-if='$store.state.mgrVersion'>WeBASE版本: </span>
             <span class="content-head-version content-head-version-data">{{$store.state.mgrVersion}}</span> -->
       <!-- <a style="display:none"  class="content-head-network-link"><router-link to="bigScreen" style="color:white;text-decoration: none;">{{this.$t("head.dataBigScreen")}}</router-link></a> -->
-      <a class="content-head-network-link"><router-link to="bigScreen" style="color:white;text-decoration: none;">{{this.$t("head.dataBigScreen")}}</router-link></a>
-      <a v-if="$store.state.version>=2.5" class="content-head-network-link" target="_blank"
-        href="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/design/security_control/chain_governance.html">{{this.$t("head.helpText")}}</a>
-      <a v-else class="content-head-network-link" target="_blank" href="https://webasedoc.readthedocs.io/zh_CN/lab/">{{this.$t("head.helpText")}}</a>
+      <!-- <a class="content-head-network-link"><router-link to="bigScreen" style="color:white;text-decoration: none;">{{this.$t("head.dataBigScreen")}}</router-link></a> -->
+      <!-- <a v-if="$store.state.version>=2.5" class="content-head-network-link" target="_blank" href="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/design/security_control/chain_governance.html">{{this.$t("head.helpText")}}</a> -->
+      <!-- <a v-else class="content-head-network-link" target="_blank" href="https://webasedoc.readthedocs.io/zh_CN/lab/">{{this.$t("head.helpText")}}</a> -->
       <!-- <el-button type='text' size='small' @click='deleteConfig'>删除</el-button> -->
-      <span v-if="abnormalList.length>0">
+      <!-- <span v-if="abnormalList.length>0">
         <el-tooltip class="item" effect="dark" placement="bottom-end">
           <div slot="content">
             <span>{{$t('text.group')}}</span>
@@ -51,8 +50,8 @@
           <i class="el-icon-warning-outline font-color-E6A23C"></i>
         </el-tooltip>
 
-      </span>
-      <el-dropdown trigger="click" @command="changeGroup" placement="bottom">
+      </span> -->
+      <!-- <el-dropdown trigger="click" @command="changeGroup" placement="bottom">
         <span class="cursor-pointer font-color-fff" @click="groupVisible = !groupVisible">
           {{this.$t("head.group")}}: {{groupName}}<i :class="[groupVisible?'el-icon-arrow-up':'el-icon-arrow-down']"></i>
         </span>
@@ -65,14 +64,14 @@
             </el-dropdown-item>
           </ul>
         </el-dropdown-menu>
-      </el-dropdown>
+      </el-dropdown> -->
       <span style="padding-right:10px"></span>
       <el-popover placement="bottom" width="0" min-width="50px" trigger="click">
         <div class="sign-out-wrapper">
-          <span class="change-password" @click="changeMessage">{{this.$t("head.changeMessage")}}</span><br>
+          <!-- <span class="change-password" @click="changeMessage">{{this.$t("head.changeMessage")}}</span><br> -->
           <span class="change-password" @click="changePassword">{{this.$t("head.changePassword")}}</span><br>
-          <span class="change-password" @click="lookVersion">{{this.$t("head.versionInfo")}}</span><br>
-          <span class="sign-out" @click="deleteSelf">{{this.$t("head.deleteSelf")}}</span><br>
+          <!-- <span class="change-password" @click="lookVersion">{{this.$t("head.versionInfo")}}</span><br> -->
+          <!-- <span class="sign-out" @click="deleteSelf">{{this.$t("head.deleteSelf")}}</span><br> -->
           <span class="sign-out" @click="signOut">{{this.$t("head.exit")}}</span>
         </div>
         <a class="browse-user" slot="reference">

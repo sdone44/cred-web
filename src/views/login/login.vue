@@ -14,18 +14,19 @@
  * limitations under the License.
  */
 <template>
-  <div class="login-bg" :style="{ backgroundImage: 'url(' + bgLogin + ')' }">
-    <div class="login-lang">
+  <!-- <div class="login-bg" :style="{ backgroundImage: 'url(' + bgLogin + ')' }"> -->
+  <div class="login-bg">
+    <!-- <div class="login-lang">
       <lang-select class="right-menu-item hover-effect"></lang-select>
-    </div>
+    </div> -->
     <div class="login">
       <div>
-        <svg style="width: 142px;height: 142px;fill: currentColor;overflow: hidden;" aria-hidden="true">
+        <!-- <svg style="width: 142px;height: 142px;fill: currentColor;overflow: hidden;" aria-hidden="true">
           <use xlink:href="#wbs-icon-WeBASE"></use>
         </svg>
         <p class="logo-content">
           WeBank Blockchain Application Software Extension
-        </p>
+        </p> -->
       </div>
       <div class="msg-wrapper">
         <div class="msg-error" v-show="msgError || timeout">
@@ -68,8 +69,8 @@
       </div>
       <div>
         <div class="padding-top-10" style="margin-top: 20px; display: flex">
-          <span class="font-14 font-color-333">还没有账号？</span>
-          <span class="login-register link" @click="link('/register')">立即注册</span>
+          <!-- <span class="font-14 font-color-333">还没有账号？</span>
+          <span class="login-register link" @click="link('/register')">立即注册</span> -->
           <!-- <span class="login-forget link" @click='link("/forgerpwd")'>忘记密码</span> -->
         </div>
       </div>
@@ -336,15 +337,16 @@ export default {
   height: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-color: #171f2e;
 }
 .login {
   position: absolute;
   width: 430px;
   /* height: 460px; */
   top: 52%;
-  left: 70%;
+  left: 50%;
   margin-top: -280px;
-  margin-left: -201px;
+  margin-left: -215px;
   padding: 0 50px 40px 50px;
   background-color: #fff;
   border-radius: 16px;

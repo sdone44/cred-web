@@ -55,8 +55,18 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                loader: 'happypack/loader?id=happy-babel-js',
-                include: [resolve('src'), resolve('node_modules/webpack-dev-server/client')]
+                loader: 'babel-loader',
+                include: [
+                  resolve('src'),
+                  resolve('node_modules/webpack-dev-server/client'),
+                  resolve('node_modules/@ethereumjs/util/dist'),
+                  resolve('node_modules/@noble/curves/abstract/'),
+                  resolve('node_modules/micro-ftch/'),
+                ],
+                options: {
+                  presets: ['@babel/preset-env'],
+                  plugins: ['@babel/plugin-transform-runtime', "@babel/plugin-transform-modules-commonjs"]
+                }
             },
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
