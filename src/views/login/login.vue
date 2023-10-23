@@ -29,6 +29,7 @@
         </p> -->
       </div>
       <div class="msg-wrapper">
+        <div class="login-title">居家健康监测数据可信共享模型系统</div>
         <div class="msg-error" v-show="msgError || timeout">
           <i class="el-icon-remove"></i>
           <span v-if="msgError">{{
@@ -386,10 +387,9 @@ export default {
   padding-top: 80px;
 }
 .login-title {
-  padding: 16px 0 0px 0;
+  padding: 40px 0;
   font-size: 20px;
   color: #2e2e2e;
-  letter-spacing: 0.04px;
 }
 .login-label {
   position: relative;
