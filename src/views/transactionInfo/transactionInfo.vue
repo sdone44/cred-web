@@ -242,9 +242,9 @@ export default {
     box-shadow: 0 3px 11px 0 rgba(159, 166, 189, 0.11);
 }
 .input-with-select >>> .el-button {
-    border: 1px solid #20d4d9;
+    border: 1px solid #3364cb;
     border-radius: inherit;
-    background: #20d4d9;
+    background: #3364cb;
     color: #fff;
 }
 .input-with-select >>> .el-input__inner {

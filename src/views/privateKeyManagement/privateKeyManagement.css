@@ -43,9 +43,9 @@
     box-shadow: 0 3px 11px 0 rgba(159, 166, 189, 0.11);
 }
 .input-with-select >>> .el-button {
-    border: 1px solid #20D4D9;
+    border: 1px solid #3364cb;
     border-radius: inherit;
-    background: #20D4D9;
+    background: #3364cb;
     color: #fff;
 }
 

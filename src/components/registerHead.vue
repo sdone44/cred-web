@@ -71,7 +71,7 @@ export default {
 <style scoped>
 .content-head-wrapper {
   width: calc(100%);
-  background-color: #181f2e;
+  background-color: #3364ca;
   text-align: left;
   line-height: 54px;
   position: relative;

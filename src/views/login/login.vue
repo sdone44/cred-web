@@ -53,7 +53,7 @@
             </el-form-item>
             <el-form-item :label="$t('login.verificationCode')" prop="vercode">
               <div style="width: 100%">
-                <el-input style="width: 240px" v-model="loginForm.vercode" :placeholder="
+                <el-input style="width: 238px" v-model="loginForm.vercode" :placeholder="
                                         $t('inputText.verificationCode')
                                     " @keyup.enter.native="submit('loginForm')">
                 </el-input>
@@ -338,7 +338,7 @@ export default {
   height: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-color: #171f2e;
+  background-color: #ffffff;
 }
 .login {
   position: absolute;
@@ -353,6 +353,7 @@ export default {
   border-radius: 16px;
   text-align: center;
   box-sizing: border-box;
+  border: 1px solid #c7c7c7;
 }
 .logo-content {
   position: absolute;

@@ -66,19 +66,19 @@
         </el-dropdown-menu>
       </el-dropdown> -->
       <span style="padding-right:10px"></span>
-      <el-popover placement="bottom" width="0" min-width="50px" trigger="click">
+      <!-- <el-popover placement="bottom" width="0" min-width="50px" trigger="click">
         <div class="sign-out-wrapper">
-          <!-- <span class="change-password" @click="changeMessage">{{this.$t("head.changeMessage")}}</span><br> -->
+          <span class="change-password" @click="changeMessage">{{this.$t("head.changeMessage")}}</span><br>
           <span class="change-password" @click="changePassword">{{this.$t("head.changePassword")}}</span><br>
-          <!-- <span class="change-password" @click="lookVersion">{{this.$t("head.versionInfo")}}</span><br> -->
-          <!-- <span class="sign-out" @click="deleteSelf">{{this.$t("head.deleteSelf")}}</span><br> -->
+          <span class="change-password" @click="lookVersion">{{this.$t("head.versionInfo")}}</span><br>
+          <span class="sign-out" @click="deleteSelf">{{this.$t("head.deleteSelf")}}</span><br>
           <span class="sign-out" @click="signOut">{{this.$t("head.exit")}}</span>
         </div>
         <a class="browse-user" slot="reference">
           <i class="wbs-icon-user-icon"></i>
           <i>{{accountName}}</i>
         </a>
-      </el-popover>
+      </el-popover> -->
     </div>
     <el-dialog :title="$t('head.changeMessage')" v-if="changeMessageDialogVisible" :visible.sync="changeMessageDialogVisible" width="600px" style="text-align: center;">
       <change-message-dialog @success="changeMessageSuccess"></change-message-dialog>
@@ -404,7 +404,7 @@ export default {
 <style scoped>
 .content-head-wrapper {
   width: calc(100%);
-  background-color: #181f2e;
+  background-color: #3364ca;
   text-align: left;
   line-height: 54px;
   position: relative;

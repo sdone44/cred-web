@@ -133,7 +133,7 @@ body { overflow-y: scroll;overflow: auto !important; }
 }
 
 .font-color-37eef2 {
-    color: #37eef2
+    color: #000000
 }
 
 .font-color-00c1d4 {
@@ -322,13 +322,13 @@ body { overflow-y: scroll;overflow: auto !important; }
 
 .el-button--primary {
     color: #fff;
-    background-color: #20D4D9 !important;
-    border-color: #20D4D9 !important;
+    background-color: #3364ca !important;
+    border-color: #3364ca !important;
 }
 
 .el-button--primary.is-active, .el-button--primary:active, .el-button--primary:focus, .el-button--primary:hover {
-    background: #20D4D9;
-    border-color: #20D4D9;
+    background: #3364ca;
+    border-color: #3364ca;
     color: #fff;
 }
 
@@ -343,7 +343,7 @@ body { overflow-y: scroll;overflow: auto !important; }
 
 .el-message-box__btns button:nth-child(2) {
     color: #fff;
-    border-color: #20D4D9;
+    border-color: #3364ca;
 }
 
 .el-button--default.is-active, .el-button--default:active, .el-button--default:focus, .el-button--default:hover {
