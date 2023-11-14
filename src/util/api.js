@@ -854,9 +854,9 @@ export function getAbi(data) {
     })
 }
 
-export function getPictureCheckCode() {
+export function getPictureCheckCode(token) {
     return get({
-        url: `${url.ORG_LIST}/account/pictureCheckCode`,
+        url: `${url.ORG_LIST}/account/pictureCheckCode?token=${token}`,
         method: 'get'
     })
 }

@@ -595,10 +595,11 @@ export default {
             }
           })
           .catch((err) => {
-            this.$message({
-              type: "error",
-              message: "系统错误！",
-            });
+            console.log(err)
+            // this.$message({
+            //   type: "error",
+            //   message: "系统错误！",
+            // });
           });
       }
     },

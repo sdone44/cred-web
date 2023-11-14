@@ -180,7 +180,7 @@ export default {
     loginOpera: function () {
       localStorage.setItem("config", 0);
       this.changeCode();
-      this.getEncryption();
+      // this.getEncryption();
       this.$store.dispatch("set_contract_dataList_action", []);
     },
     handleEncryption: function () {
@@ -201,13 +201,36 @@ export default {
       });
     },
     changeCode: function () {
+      let token = this.$route.query.token
       this.codeUrl = "";
       this.authToken = "";
-      getPictureCheckCode()
+      getPictureCheckCode(token)
         .then((res) => {
           if (res.data.code === 0) {
             this.codeUrl = `data:image/png;base64,${res.data.data.base64Image}`;
             this.authToken = res.data.data.token;
+            if (res.data.data.tokenL) {
+                localStorage.setItem("groupName", "");
+                localStorage.setItem("groupId", "");
+                localStorage.setItem("folderList", "");
+                localStorage.setItem("user", res.data.data.account);
+                localStorage.setItem("root", res.data.data.roleName);
+                localStorage.setItem("token", res.data.data.tokenL);
+                sessionStorage.setItem(
+                  "accountStatus",
+                  res.data.data.accountStatus
+                );
+                sessionStorage.setItem("reload", 1);
+                localStorage.setItem("config", 0);
+                localStorage.setItem("nodeVersionChange", "");
+                localStorage.setItem("selectData", "");
+                localStorage.setItem("solcName", "");
+                localStorage.setItem("versionId", null);
+                //this.getConfigType();
+                localStorage.setItem("deployType", 0);
+                router.push("/main");
+            }
+
           } else {
             this.codeUrl = "";
             this.authToken = "";
@@ -342,7 +365,7 @@ export default {
 }
 .login {
   position: absolute;
-  width: 430px;
+  width: 434px;
   /* height: 460px; */
   top: 52%;
   left: 50%;
