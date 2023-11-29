@@ -545,13 +545,13 @@ export default {
             this.eventLog = res.data.data.logEntries;
 
             // if not deploy contract trans
-            if (to && to != "0x0000000000000000000000000000000000000000") {
-              this.exportContrctShow = false;
-              this.getMethod(input, res.data.data.output);
-            } else {
-              // else contract deploy trans not decode method
-              this.getDeloyAbi(input, res.data.data.output);
-            }
+            // if (to && to != "0x0000000000000000000000000000000000000000") {
+            //   this.exportContrctShow = false;
+            //   this.getMethod(input, res.data.data.output);
+            // } else {
+            //   // else contract deploy trans not decode method
+            //   this.getDeloyAbi(input, res.data.data.output);
+            // }
           } else {
             this.$message({
               type: "error",
