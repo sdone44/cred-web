@@ -100,14 +100,14 @@
                 </div>
               </div>
             </div>
-            <div class="item" v-show="inputButtonShow" v-if="!liquidCheck">
+            <!-- <div class="item" v-show="inputButtonShow" v-if="!liquidCheck">
               <span class="label"></span>
               <el-button @click="decode" type="primary">{{buttonTitle}}</el-button>
               <span style="margin-left:20px"></span>
               <el-button v-show="exportContrctShow" type="primary" class="search-part-left-btn" @click="generateAbi">{{this.$t("nodes.addAbi")}}</el-button>
               <span style="margin-left:20px"></span>
               <el-button v-show="exportContrctShow" type="primary" class="search-part-left-btn" @click="generateContract">{{this.$t("nodes.addContract")}}</el-button>
-            </div>
+            </div> -->
           </div>
         </div>
         <el-dialog :title="$t('nodes.addAbi')" :visible.sync="importVisibility" width="500px" v-if="importVisibility" center class="send-dialog">
@@ -260,7 +260,7 @@ export default {
       contractList: [],
       decodeData: {},
       funcData: "",
-      showDecode: false,
+      showDecode: true,
       buttonTitle: this.$t("transaction.reduction"),
       eventTitle: this.$t("transaction.reduction"),
       abiType: [],
