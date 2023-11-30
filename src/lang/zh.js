@@ -463,7 +463,7 @@ export default {
         CNSTips: "CNS查询说明：合约命名服务CNS通过提供链上合约名称与合约地址映射关系的记录及相应的查询功能，方便调用者通过记忆简单的合约名来实现对链上合约的调用。",
         CRUDTips: "CRUD说明：CRUD(增删改查)可以创建表，对表进行增删改查操作。Tips：如果启用了部署和建表权限，建表操作需要部署和建表权限。删除和修改表操作需要该表的表权限。",
         CRUDServiceManagement: "CRUD",
-        PrivateKey: "身份认证",
+        PrivateKey: "身份验证",
         systemManager: "系统管理",
         permission: "权限管理",
         permissionTips: "管理权限说明：权限控制是基于外部账户(tx.origin)的访问机制，对包括合约部署，表的创建，表的写操作（插入、更新和删除）进行权限控制，表的读操作不受权限控制。",
