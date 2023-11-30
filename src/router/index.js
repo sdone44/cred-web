@@ -308,7 +308,7 @@ const routes = [
   {
     path: "/",
     component: main,
-    name: "身份认证",
+    name: "身份验证",
     nameKey: "PrivateKey",
     leaf: true,
     menuShow: true,
@@ -317,7 +317,7 @@ const routes = [
       {
         path: "/privateKeyManagement",
         component: privateKeyManagement,
-        name: "身份认证",
+        name: "身份验证",
         nameKey: "PrivateKey",
         menuShow: true,
         meta: { requireAuth: true }
