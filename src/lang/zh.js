@@ -523,7 +523,7 @@ export default {
         pbftView: "pbftView",
         status: "状态",
         block: "区块",
-        transaction: "交易",
+        transaction: "数据资产",
         tranfer: "出块者",
         more: "更多",
         run: "运行",
