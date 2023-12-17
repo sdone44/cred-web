@@ -804,11 +804,11 @@ export default {
 }
 .overview-item-number {
     font-size: 24px;
-    color: #fff;
+    color: #000;
 }
 .overview-item-title {
     width: 100%;
-    color: #fff;
+    color: #000;
     min-width: 113px;
 }
 .overview-item-svg {

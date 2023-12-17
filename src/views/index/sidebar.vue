@@ -30,7 +30,7 @@
       <div class="mini-sidebar-contract-icon" v-if="!menuShowC" style="padding-bottom:40px">
         <i class="el-icon-caret-right font-color-aeb1b5" @click="hideMune(false)" style="font-size: 18px;"></i>
       </div>
-      <el-menu default-active="999" router class="el-menu-vertical-demo" text-color="#9da2ab" :active-text-color="activeTextColor ? '#37eef2': ''" active-background-color="#1e293e" background-color="#ffffff"
+      <el-menu default-active="999" router class="el-menu-vertical-demo" text-color="#000000" :active-text-color="activeTextColor ? '#37eef2': ''" active-background-color="#1e293e" background-color="#ffffff"
         @select="select" :collapse="!menuShowC" @open="handleOpen" @close="handleClose">
         <template v-for="(item,index) in routesListC" v-if="item.menuShow">
           <el-submenu v-if="!item.leaf" :index="`${index}`" ref="ele" class="">
@@ -595,7 +595,7 @@ export default {
 }
 .el-menu-vertical-demo >>> .el-menu-item {
   font-size: 14px;
-  color: #9da2ab;
+  color: #000000;
   text-align: left;
 }
 .el-menu-vertical-demo >>> .el-submenu__title {
@@ -603,7 +603,7 @@ export default {
 }
 .el-menu-item-group > ul > .el-menu-item {
   font-size: 14px;
-  color: #9da2ab;
+  color: #000000;
   text-align: left;
   padding-left: 57px !important;
   height: 46px;

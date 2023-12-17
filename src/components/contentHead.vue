@@ -423,7 +423,7 @@ export default {
   margin-left: 40px;
   display: inline-block;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
 }
 .content-head-network {
