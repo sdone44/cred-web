@@ -48,7 +48,7 @@
                                 <span class="part2-title-right">{{this.$t('home.chartExplain')}}</span>
                             </div>
                             <div class="chart" ref="chart">
-                                <v-chart ref="linechart" :id="'homeId'" v-if="chartStatistics.show" :data="chartStatistics.date" :transactionDataArr="chartStatistics.dataArr" :size="chartStatistics.chartSize" v-loading="loadingCharts"></v-chart>
+                                <v-chart  ref="linechart" :id="'homeId'" v-if="chartStatistics.show" :data="chartStatistics.date" :transactionDataArr="chartStatistics.dataArr" :size="chartStatistics.chartSize" v-loading="loadingCharts"></v-chart>
                             </div>
                         </div>
                     </el-col>
@@ -656,13 +656,13 @@ export default {
 }
 .part2-title-left {
     float: left;
-    font-size: 16px;
-    color: #000e1f;
+    font-size: 20px;
+    color: #616872;
     font-weight: bold;
 }
 .part2-title-right {
     float: right;
-    font-size: 12px;
+    font-size: 18px;
     color: #727476;
     padding: 2px 12px;
     border-radius: 20px;
@@ -705,15 +705,15 @@ export default {
 }
 .search-table-content >>> th {
     background: #fafafa;
-    color: #2e384d;
+    color: #616872;
 }
 .search-table-content >>> th,
 .search-table-content >>> td {
-    font-size: 14px;
+    font-size: 20px;
 }
 .overview-wrapper {
     background: #fff;
-    font-size: 15px;
+    font-size: 20px;
     box-shadow: 0 4px 12px 0 #dfe2e9;
     border-radius: 2px;
 }
@@ -724,14 +724,14 @@ export default {
     justify-content: space-between;
 }
 .overview-title {
-    font-size: 15px;
-    color: #2e384d;
+    font-size: 20px;
+    color: #616872;
     padding-bottom: 22px;
     border-bottom: 2px solid #2e384d;
 }
 .overview-more {
     font-size: 14px;
-    color: #2fcdd1;
+    color: #616872;
 }
 .block-item {
     display: flex;
@@ -763,13 +763,13 @@ export default {
     white-space: nowrap;
 }
 .node-ip {
-    color: #0db1c1;
+    color: #616872;
 }
 .block-trans {
     display: inline-block;
     padding: 0 2px;
     background-color: #f6f7f8;
-    color: #0db1c1;
+    color: #616872;
     cursor: pointer;
 }
 .trans-address span {
@@ -803,12 +803,14 @@ export default {
     width: calc(100% - 60px);
 }
 .overview-item-number {
-    font-size: 24px;
-    color: #000;
+    font-size: 30px;
+    color: #f6f5ff;
+    font-weight: 700;
 }
 .overview-item-title {
+    font-size: 18px;
     width: 100%;
-    color: #000;
+    color: #f6f5ff;
     min-width: 113px;
 }
 .overview-item-svg {

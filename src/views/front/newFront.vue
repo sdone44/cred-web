@@ -671,7 +671,7 @@ export default {
 .search-table-content >>> td,
 .search-table-content >>> th {
     padding: 8px 0;
-    font-size: 12px;
+    font-size: 18px;
 }
 /* .search-table-content>>>th {
     color: #8598b0;

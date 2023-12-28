@@ -45,6 +45,8 @@
       </div>
       <div class="search-table">
         <el-table
+          header-cell-style="font-size:18px"
+          cell-style="font-size:18px"
           :data="blockData"
           class="block-table-content"
           v-loading="loading"
@@ -296,7 +298,6 @@ export default {
 .block-table-content {
   width: 100%;
   padding-bottom: 16px;
-  font-size: 12px;
 }
 .block-table-content >>> .el-table__row {
   cursor: pointer;

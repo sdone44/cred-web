@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="search-table">
-                <el-table :data="transactionList" class="block-table-content" :row-key="getRowKeys" :expand-row-keys="expands" v-loading="loading" @row-click="clickTable" ref="refTable">
+                <el-table cell-style="font-size:18px" header-cell-style="font-size:18px" :data="transactionList" class="block-table-content" :row-key="getRowKeys" :expand-row-keys="expands" v-loading="loading" @row-click="clickTable" ref="refTable">
                     <el-table-column type="expand" align="center">
                         <template slot-scope="scope">
                             <v-transaction-detail :transHash="scope.row.transHash"></v-transaction-detail>
@@ -206,7 +206,7 @@ export default {
 .block-table-content {
     width: 100%;
     padding-bottom: 16px;
-    font-size: 12px;
+    font-size: 18px;
 }
 .block-table-content >>> .el-table__expanded-cell {
     padding: 12px 6px;

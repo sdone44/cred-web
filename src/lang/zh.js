@@ -515,7 +515,7 @@ export default {
     },
     home: {
         nodes: "节点个数",
-        contracts: "已部署的智能合约",
+        contracts: "已部署合约",
         blocks: "区块数量",
         transactions: "数据资产",
         nodeId: "节点Id",

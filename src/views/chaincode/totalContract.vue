@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="search-table">
-            <el-table :data="ContractList" tooltip-effect="dark" v-loading="loading">
+            <el-table cell-style="font-size:18px" header-cell-style="font-size:18px" :data="ContractList" tooltip-effect="dark" v-loading="loading">
                 <el-table-column prop="contractAddress" :label="$t('contracts.contractAddress')" show-overflow-tooltip align="center">
                     <template slot-scope="scope">
                         <i class="wbs-icon-copy font-12 copy-public-key" @click="copyPubilcKey(scope.row.contractAddress)" :title="$t('contracts.copyContractAddress')"></i>

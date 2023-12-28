@@ -76,10 +76,10 @@ export default {
                       formatter: function(data) {
                         console.log(data)
                         return (
-                            '<span style="font-size:10px">' +
+                            '<span style="font-size:18px">' +
                             data[0].name +
                             '</span><br>' +
-                            '<span style="font-size:10px;">' + that.$t("home.chartTransactions") + '：' +
+                            '<span style="font-size:18px;">' + that.$t("home.chartTransactions") + '：' +
                             data[0].value + that.$t('transaction.stroke') +
                             "</span>"
                         );
@@ -120,7 +120,8 @@ export default {
                     axisLabel: {
                         interval: 1,
                         textStyle: {
-                            color: "rgba(0,14,31,0.62)"
+                            color: "rgba(0,14,31,0.62)",
+                            fontSize: 18
                         }
                     }
                 },
@@ -144,7 +145,8 @@ export default {
                             }
                         },
                         textStyle: {
-                            color: "rgba(0,14,31,0.62)"
+                            color: "rgba(0,14,31,0.62)",
+                            fontSize: 18
                         }
                     }
                 }

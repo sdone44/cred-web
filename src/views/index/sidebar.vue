@@ -1,18 +1,4 @@
-/*
- * Copyright 2014-2020 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 <template>
   <div style="height: 100%;position: relative;box-sizing: border-box">
     <div style="height: 100%;background-color: #ffffff;box-sizing: border-box;overflow-y: auto;" class="sidebar-content">
@@ -24,25 +10,27 @@
         <span v-if="version" class="font-12 text-center version">({{version}})</span>
       </div> -->
 
+      <!-- 菜单栏收缩按钮 --> 
       <span class="sidebar-contract-icon">
         <i class="el-icon-caret-left font-color-aeb1b5" @click="hideMune(true)" style="font-size: 18px;"></i>
       </span>
       <div class="mini-sidebar-contract-icon" v-if="!menuShowC" style="padding-bottom:40px">
-        <i class="el-icon-caret-right font-color-aeb1b5" @click="hideMune(false)" style="font-size: 18px;"></i>
+        <i class="el-icon-caret-right font-color-aeb1b5" @click="hideMune(false)" style="font-size: 20px;"></i>
       </div>
-      <el-menu default-active="999" router class="el-menu-vertical-demo" text-color="#000000" :active-text-color="activeTextColor ? '#37eef2': ''" active-background-color="#1e293e" background-color="#ffffff"
+      <!-- 左侧菜单 -->
+      <el-menu default-active="999" router class="el-menu-vertical-demo" text-color="#000000b3" :active-text-color="activeTextColor ? '#37eef2': ''" active-background-color="#1e293e" background-color="#ffffff"
         @select="select" :collapse="!menuShowC" @open="handleOpen" @close="handleClose">
         <template v-for="(item,index) in routesListC" v-if="item.menuShow">
           <el-submenu v-if="!item.leaf" :index="`${index}`" ref="ele" class="">
             <template slot="title">
               <div :style="{'padding-left':  menuShowC ? '13px':''}">
-                <i :class="item.iconCls" :style="{'color': activeIndex == index ? '#909399':''}"></i>
+                <i :class="item.iconCls" :style="{'color': activeIndex == index ? '#000000b3':''}"></i>
                 <span :class="{'font-color-37eef2': activeIndex == index}">{{item.name}}</span>
               </div>
             </template>
 
             <el-menu-item v-for="term in item.children" :key="term.path" :index="term.path" v-if="term.menuShow" style="padding-left: 58px" :style="{
-                                    'color': term.path == activeRoute ? '#000000':'',
+                                    'color': term.path == activeRoute ? '#000000b3':'',
                                     'border-left':term.path == activeRoute ? '3px solid #ffffff': '',
                                     'padding-left':term.path == activeRoute ? '55px': '58px',
                                     'background-color':term.path == activeRoute ? '#ffffff': '#ffffff',}">
@@ -594,20 +582,27 @@ export default {
   border: none;
 }
 .el-menu-vertical-demo >>> .el-menu-item {
-  font-size: 14px;
-  color: #000000;
+  font-size: 20px;
+  color: #000000b3;
   text-align: left;
+  font-weight: bolder;
 }
 .el-menu-vertical-demo >>> .el-submenu__title {
-  padding-left: 33px;
+  font-size: 20px;
+  font-weight: bolder;
 }
 .el-menu-item-group > ul > .el-menu-item {
-  font-size: 14px;
-  color: #000000;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #000000b3;
   text-align: left;
   padding-left: 57px !important;
   height: 46px;
   line-height: 46px;
+}
+/deep/ .el-icon-arrow-down {
+  font-size: 16px;
+  color: #000000b3;
 }
 .sidebar-content {
   position: relative;
@@ -683,6 +678,7 @@ export default {
 .sidebar-icon {
   font-size: 15px;
   padding-right: 5px;
+  color: #000000b3;
 }
 .sidebar-contract-icon {
   position: absolute;

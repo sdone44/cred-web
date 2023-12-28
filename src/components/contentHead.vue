@@ -404,7 +404,7 @@ export default {
 <style scoped>
 .content-head-wrapper {
   width: calc(100%);
-  background-color: #3364ca;
+  background-color: #1c63cc;
   text-align: left;
   line-height: 54px;
   position: relative;
@@ -422,8 +422,8 @@ export default {
 .content-head-title {
   margin-left: 40px;
   display: inline-block;
-  font-size: 16px;
-  color: #000;
+  font-size: 30px;
+  color: #f6f5ff;
   font-weight: bold;
 }
 .content-head-network {
