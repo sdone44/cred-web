@@ -2,13 +2,13 @@
 <template>
   <div style="height: 100%;position: relative;box-sizing: border-box">
     <div style="height: 100%;background-color: #ffffff;box-sizing: border-box;overflow-y: auto;" class="sidebar-content">
-      <!-- <div class="image-flex justify-center center" style="height: 54px;position:relative;" v-if="menuShowC">
+      <div class="image-flex justify-center center" style="height: 54px;position:relative;" v-if="menuShowC">
         <img :src="maxLog" alt="" style="width:120px">
         <span class="sidebar-contract-icon">
           <i class="el-icon-caret-left font-color-aeb1b5" @click="hideMune(true)" style="font-size: 18px;"></i>
         </span>
-        <span v-if="version" class="font-12 text-center version">({{version}})</span>
-      </div> -->
+        <!-- <span v-if="version" class="font-12 text-center version">({{version}})</span> -->
+      </div>
 
       <!-- 菜单栏收缩按钮 --> 
       <span class="sidebar-contract-icon">
@@ -53,7 +53,8 @@
 
 <script>
 import Bus from "@/bus";
-import maxLog from "../../../static/image/logo-2 copy@1.5x.jpg";
+// import maxLog from "../../../static/image/logo-2 copy@1.5x.jpg";
+import maxLog from "../../../static/image/c-logo.jpg";
 import router from "@/router";
 import { versionfunegt } from "@/util/util.js";
 import { getFronts, checkIsWasm } from "@/util/api";

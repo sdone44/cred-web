@@ -599,19 +599,20 @@ export default {
 <style scoped>
 .node-bg {
     /* background: linear-gradient(102.87deg, #4ccbf3 0%, #94eefb 100%); */
-    background-color: #73baf6;
+    /* background-color: #73baf6; */
+    background-color: rgba(36, 97, 255, 0.4);
 }
 .contract-bg {
     /* background: linear-gradient(102.87deg, #4886ff 0%, #62b0f8 100%); */
-    background-color: #6CC8E6;
+    background-color: rgba(249, 140, 0, 0.4);
 }
 .block-bg {
     /* background: linear-gradient(102.87deg, #7280ff 0%, #98afff 100%); */
-    background-color: #ECAC7B;
+    background-color: rgba(239, 36, 49, 0.4);
 }
 .transation-bg {
     /* background: linear-gradient(102.87deg, #ff9472 0%, #ffc1ad 100%); */
-    background-color: #8AAEFD;
+    background-color: rgba(47, 182, 68, 0.4);
 }
 .over-view-wrapper {
     background: #f7f7f7;
@@ -803,14 +804,14 @@ export default {
     width: calc(100% - 60px);
 }
 .overview-item-number {
-    font-size: 30px;
-    color: #f6f5ff;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.65);;
     font-weight: 700;
 }
 .overview-item-title {
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
-    color: #f6f5ff;
+    color: rgba(0, 0, 0, 0.65);;
     min-width: 113px;
 }
 .overview-item-svg {
